@@ -4,7 +4,7 @@ use Cocur\Slugify\Slugify;
 
 class rex_yform_value_slug extends rex_yform_value_abstract
 {
-    function enterObject()
+    public function postFormAction()
     {
         $separator = $this->getElement('separator') ?: '-';
 
@@ -22,6 +22,13 @@ class rex_yform_value_slug extends rex_yform_value_abstract
             $this->params['value_pool']['sql'][$this->getName()] = $slug;
         }
 
+        if ($this->needsOutput() && $this->params['send'] === 1) {
+            $this->params['form_output'][$this->getId()] = $this->parse('value.showvalue.tpl.php');
+        }
+    }
+
+    function enterObject()
+    {
         if ($this->needsOutput()) {
             $this->params['form_output'][$this->getId()] = $this->parse('value.showvalue.tpl.php');
         }
