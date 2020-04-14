@@ -50,7 +50,7 @@ class rex_yform_value_slug extends rex_yform_value_abstract
                 'no_db' => ['type' => 'no_db', 'label' => rex_i18n::msg('yform_values_defaults_table')],
             ],
             'description' => rex_i18n::msg('yform_values_slug_description'),
-            'db_type' => ['text', 'varchar(191)'],
+            'db_type' => ['varchar(191)', 'text'],
             'multi_edit' => false,
         ];
     }
