@@ -1,9 +1,9 @@
 YForm Erweiterung: Slug
 =============
 
-![Screenshot](./src/addons/yform_slug/assets/preview_settings.png)
+![Screenshot](https://raw.githubusercontent.com/mizmiz/redaxo-yform_slug/master/assets/preview_settings.png)
 
-![Screenshot](./src/addons/yform_slug/assets/preview.png)
+![Screenshot](https://raw.githubusercontent.com/mizmiz/redaxo-yform_slug/master/assets/preview.png)
 
 * YForm Erweiterung zur Erzeugung eines Slugs (Clean URL) aus dem Wert eines anderen Feldes.
 
