@@ -1,0 +1,3 @@
+yform_values_slug_description = Ein Feld, das aus dem Wert eines anderen Feldes einen <b>Slug</b> erzeugt.
+yform_values_slug_field = Input-Feld
+yform_values_slug_separator = Separator

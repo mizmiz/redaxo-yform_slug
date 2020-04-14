@@ -1,0 +1,8 @@
+package: yform_slug
+version: '1.0.0'
+author: 'Michael Ziem'
+supportpage: www.redaxo.org/de/forum/
+
+requires:
+    packages:
+        yform/manager: '>=3.0'
