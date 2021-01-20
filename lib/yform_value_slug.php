@@ -1,6 +1,7 @@
 <?php
 
-use Cocur\Slugify\Slugify;
+use Ausi\SlugGenerator\SlugOptions;
+use Ausi\SlugGenerator\SlugGenerator;
 
 class rex_yform_value_slug extends rex_yform_value_abstract
 {
@@ -11,8 +12,11 @@ class rex_yform_value_slug extends rex_yform_value_abstract
         $field = $this->getElement('field');
         $fieldValue = $this->params['value_pool']['email'][$field];
 
-        $slugify = new Slugify(['separator' => $separator]);
-        $slug = $slugify->slugify($fieldValue);
+        $generator = new SlugGenerator((new SlugOptions)
+            ->setLocale('de')
+            ->setDelimiter($separator)
+        );
+        $slug = $generator->generate($fieldValue);
 
         $this->setValue($slug);
 
