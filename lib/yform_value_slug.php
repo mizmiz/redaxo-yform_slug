@@ -5,7 +5,7 @@ use Ausi\SlugGenerator\SlugGenerator;
 
 class rex_yform_value_slug extends rex_yform_value_abstract
 {
-    public function postFormAction()
+    public function postFormAction(): void
     {
         $separator = $this->getElement('separator') ?: '-';
 
@@ -38,12 +38,12 @@ class rex_yform_value_slug extends rex_yform_value_abstract
         }
     }
 
-    function getDescription()
+    function getDescription(): string
     {
         return 'name|label|field|[separator]';
     }
 
-    public function getDefinitions()
+    public function getDefinitions(): array
     {
         return [
             'type' => 'value',
