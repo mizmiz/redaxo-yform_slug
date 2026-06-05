@@ -5,4 +5,4 @@ supportpage: www.redaxo.org/de/forum/
 
 requires:
     packages:
-        yform/manager: '>=3.0'
+        yform: '>=3.0'
