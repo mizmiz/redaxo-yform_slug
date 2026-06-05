@@ -22,4 +22,4 @@ Changelog
 Credits
 -------
 
-* Slugify https://github.com/cocur/slugify
+* Slug Generator https://github.com/ausi/slug-generator
